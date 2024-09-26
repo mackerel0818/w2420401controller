@@ -11,4 +11,5 @@ class SongRepository {
         Song(3, "소주 한 잔", "임창정"),
     )
     fun fetchSong() = songs
+    fun getSong(index: Int) = songs[index]
 }
