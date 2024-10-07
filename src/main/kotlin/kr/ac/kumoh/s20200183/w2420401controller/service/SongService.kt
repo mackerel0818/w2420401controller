@@ -12,6 +12,6 @@ class SongService(val repository: SongRepository) {
     }
 
     fun getRandomSong(): Song {
-        return repository.getSong(Random.nextInt(3))
+        return repository.getSong(Random.nextInt(repository.songsSize))
     }
 }
